@@ -1,1 +1,134 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
+#header{
+    position: fixed;
+    background: #F9F9F9;
+    top: 0;
+    left: 0;
+    max-height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header-img{
+    max-height: 150px;
+    animation-name: sliding;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+}
+
+#nav-bar li{
+    list-style: none;
+    padding:30px;
+}
+
+#nav-bar li:hover{
+  
+    color: orangered;
+    animation-name: rotation;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+
+a{
+    text-decoration: none;
+    color:gray;
+}
+
+#nav-links {
+ display: flex;
+ justify-content: space-around;
+}
+
+#who_we_are{
+margin-top: 300px;
+text-align: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+#product_catalog{
+    margin-top: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    border: 1px gray solid;
+    border-radius: 5px;
+    height: auto;
+    width: 250px;
+    text-align: center;
+    margin: 5px;
+    background: #F9F9F9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+.card:hover{
+      transform: scale(1.2);
+      border: 2px gray solid;
+  }
+
+.card img{
+    width: 100%;
+    height: auto;
+}
+
+.card h4{
+   flex-grow: 2;
+   width: 100%;
+}
+
+
+#get_in_touch{
+     margin-top: 100px;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+}
+
+#get_in_touch form{
+   /* border: 1px gray solid;
+  
+   border-radius: 5px; */
+   width: 50%;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+}
+
+#get_in_touch form input{
+    padding: 10px;
+}
+
+
+@keyframes rotation{
+     50%{
+        transform: scale(1.5);
+            }
+}
+
+@keyframes sliding{
+    
+    50%{
+        transform: scale(0.75);
+    }
+   100%{
+      transform: scale(1);
+    
+    }
+}
