@@ -27,14 +27,12 @@
 }
 
 #nav-bar li:hover{
-  
-    color: orangered;
     animation-name: rotation;
     animation-iteration-count: infinite;
     animation-duration: 3s;
 }
 
-a{
+#nav-bar a{
     text-decoration: none;
     color:gray;
 }
@@ -45,7 +43,7 @@ a{
 }
 
 #who_we_are{
-margin-top: 300px;
+margin-top: 200px;
 text-align: center;
 display: flex;
 flex-direction: column;
@@ -53,14 +51,33 @@ justify-content: center;
 align-items: center;
 }
 
+#video{
+    width: 560px;
+    height : 315px ;
+}
+
+#services{
+    text-align: left;
+    line-height: 2.5;
+    font-size: 18px;
+}
+
+
 #product_catalog{
     margin-top: 100px;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
 .card{
     border: 1px gray solid;
     border-radius: 5px;
@@ -92,7 +109,7 @@ align-items: center;
 
 #get_in_touch{
      margin-top: 100px;
-    margin: 0;
+    
     text-align: center;
     display: flex;
     /* justify-content: center; */
@@ -101,10 +118,7 @@ align-items: center;
 }
 
 #get_in_touch form{
-   /* border: 1px gray solid;
-  
-   border-radius: 5px; */
-   width: 50%;
+   width: 40%;
    text-align: center;
    display: flex;
    justify-content: center;
@@ -119,6 +133,7 @@ align-items: center;
 @keyframes rotation{
      50%{
         transform: scale(1.5);
+        
             }
 }
 
@@ -131,4 +146,84 @@ align-items: center;
       transform: scale(1);
     
     }
+}
+
+
+
+@media (max-width: 550px){
+
+    #header{
+        position: fixed;
+        background: #F9F9F9;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #header-img{
+        max-width: 100%;
+        height: auto;
+        animation-name: sliding;
+        animation-iteration-count: infinite;
+        animation-duration: 5s;
+    }
+
+    #nav-bar{
+        background: black;
+        color: white;
+    }
+    
+    #nav-bar li:hover{
+       animation: none;
+    }
+    
+    
+    #who_we_are{
+    margin-top: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    
+
+    #video{
+        width: 100%;
+        height : auto ;
+    }
+
+     #get_in_touch form{
+        width: 80%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+     }
+     .cards{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+     .card{
+        border: 1px gray solid;
+        border-radius: 5px;
+        height: auto;
+        width: 90%;
+        text-align: center;
+        background: #F9F9F9;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    
+    .card:hover{
+          transform: none;
+          
+      }
+    
 }
